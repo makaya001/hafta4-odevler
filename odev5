@@ -1,0 +1,12 @@
+dosya=open('futbolcular2.txt','r')
+yeni=open('not-trkckrktr-futbolcular.txt','w')
+trkce = "ŞÇÖĞÜİşçöğüı"
+nottrkce = "SCOGUIscogui"
+#turkce olan karakterleri belirledik ve
+#turkce olmayan karakterleri belirledik
+#bunlari translate ile dosyadaki karakterleri degistirdik
+donusum = str.maketrans(trkce,nottrkce)
+okuma=dosya.read()
+print(okuma.translate(donusum),file=yeni)
+
+yeni.close()
