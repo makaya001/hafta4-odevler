@@ -1,0 +1,22 @@
+   print(i,end='',file=kck)
+    elif i in bykharf :
+        print(i,end='',file=byk)
+    elif i in sayi :
+        print(i,end='',file=sayilar)
+    else :
+        print(i,end='',file=krkter)
+
+#for dongusu ile karakterlerine ayirdigimiz metni
+#tekrar acarak uzunluklarini hesapladik
+with open('kckharf.txt','r',encoding='utf-8') as kck :
+    for x in kck :
+        print('metninizde',len(x),'tane kucuk harf bulunmakta.')
+with open('bykharf.txt','r',encoding='utf-8') as byk :
+    for x in byk :
+        print('metninizde',len(x),'tane buyuk harf bulunmakta.')
+with open('sayilar.txt','r',encoding='utf-8') as sayilar :
+    for x in sayilar :
+        print('metninizde',len(x),'tane sayi bulunmakta.')
+with open('ozelkrkter.txt','r',encoding='utf-8') as krkter :
+    for x in krkter :
+        print('metninizde',len(x),'tane ozel karakter bulunmakta.')
