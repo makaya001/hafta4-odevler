@@ -1,0 +1,4 @@
+girdi=input('Lutfen bilgileri giriniz :')
+girdi=girdi.upper()
+print(girdi)
+#pyhon da gomulu olan upper ile yaptik
