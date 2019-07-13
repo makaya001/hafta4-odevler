@@ -1,0 +1,11 @@
+sayilar='1234568790'
+#kullanicidan aldigimiz inputtaki sayilari
+#toplamak icin sayilara bir degisken belirledik
+girdi=input('Lutfen toplamak istediginiz ilk sayiyi yazin :')
+x=0
+for i in girdi :
+    if i in sayilar :
+        x+=int(i)
+#input ile aldigimiz bilgileri for yardimi ile
+#icindeki sayilari ayirdik ve bunu topladik
+print(x)
