@@ -1,0 +1,13 @@
+dosya1=open('Futbolcular-sesli.txt','w')
+ssliharf='ÖÜİAEIO'
+#sesli harfleri bi degiskene atadik ve
+#for dongusu ile bas harfi sesli olanlari
+#ayirdik ve diger dosyaya yazdirdik
+with open('futbolcular2.txt','r') as dosya :
+    for i in dosya :
+        if i[0] in ssliharf:
+            print(i,file=dosya1)
+        else :
+            print('Bir hata olustu!')
+dosya.close()
+dosya1.close()
